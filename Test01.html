@@ -1,0 +1,197 @@
+<script>
+    "Question 01"
+    function smallest(arr) {
+        var small = arr[0]
+        var secondsmall = arr[0]
+        for (i of arr) {
+            if (small > i) {
+                small = i
+            } else if (i < secondsmall && i !== small) {
+                secondsmall = i;
+            }
+        }
+        return secondsmall;
+    }
+    var arr1 = [7, 9, 8, 10, 54,2, 14, 35, 88, 44]
+    var smaller = smallest(arr1)
+    console.log(smaller)
+
+
+    "Question 02"
+    function unique(arr){
+        var uni=[];
+        for(i of arr){
+            if(uni.includes(i)){
+                uni.push()
+            }else{
+                uni.push(i)
+            }
+        }
+        return uni;
+    }
+    var arr1 = [54,7,9,1,8,7,54,8,5,88,44];
+    var uniquearr=unique(arr1)
+    console.log(uniquearr)
+
+
+
+
+    "Question 03"
+    function union(arr1, arr2) {
+        var uni = [];
+        for (i of arr1) {
+            if (uni.includes(i)) {
+                uni.push()
+            } else {
+                uni.push(i)
+            }
+        }
+        for (j of arr2) {
+            if (uni.includes(j)) {
+                uni.push()
+            } else {
+                uni.push(j)
+            }
+        }
+        return uni;
+    }
+    var a = [1, 2, 3, 4, 5], b = [3, 4, 5, 6, 7];
+    var unionarr = union(a, b)
+    console.log(unionarr)
+
+
+
+    "Question04"
+    function intersection(arr1, arr2) {
+        var int = [];
+        for (i of arr1) {
+            if (arr2.includes(i)) {
+                int.push(i)
+            }
+        }
+        return int;
+
+    }
+
+    var a = [1, 2, 3, 4, 5], b = [, 3, 4, 5, 6, 7];
+    var inter = intersection(a, b)
+    console.log(inter)
+
+
+    "Question 05"
+    function longest(arr) {
+        var long = arr[0]
+        for (i of arr) {
+            if (long.length < i.length) {
+                long = i
+            }
+        }
+        return long;
+    }
+    var a = ['apple', 'banana', 'cherry', 'blueberry', 'mango', 'sky']
+    var longer = longest(a)
+    console.log(longer)
+
+
+
+    "Question 06"
+    function negative(arr) {
+        var neg = [];
+        for (i of arr) {
+            if (i < 0) {
+                neg.push(i)
+            }
+        }
+        return neg;
+
+    }
+    var a = [-3, 5, -7, -3, 2, -1, 8, 10]
+    var negate = negative(a);
+    console.log(negate)
+
+
+    "Question 07"
+    function shorter(arr) {
+        var shot = []
+        for (var i = arr.length - 1; i >= 0; i--) {
+            if (arr[i].length < 6) {
+                arr.splice(i, 1)
+            }
+        }
+        return arr;
+    }
+    var a = ['apple', 'banana', 'cherry', 'blueberry', 'mango', 'sky']
+    var shotes = shorter(a)
+    console.log(shotes)
+
+
+    "Question 08"
+    function average(arr) {
+        var sum = 0;
+        var total = arr.length
+        for (i of arr) {
+            sum = sum + i
+            var avg = sum / total;
+        }
+        return avg;
+    }
+    var a = [-3, 5, -7, -3, 2, -1, 8, 10]
+    var aver = average(a)
+    console.log(aver)
+
+
+
+    // "question 09"
+    // function square(start,end){
+    //     var sque=0
+    //     for(i=start;i<=end;i++){
+    //         start=i
+    //         sque+=start**2
+    //     }
+    //     return sque;
+    // }
+    // var a=1,b=10;
+    // var ans=square(a,b)
+    // console.log(ans)
+
+
+       "question 10"
+        function square(start,end,stop){
+            var sum=0
+            for(i=start;i<=end;i++){
+                if(i<=stop){
+                    sum+=i
+                }
+            }
+            return sum;
+        }
+        var a=1,b=10,s=5;
+        var ans=square(a,b,s)
+        console.log(ans)
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<script>
+    "question 09"
+    function square(start,end){
+        var sque=0
+        for(i=start;i<=end;i++){
+            start=i
+            sque+=start**2
+        }
+        return sque;
+    }
+    var a=1,b=10;
+    var ans=square(a,b)
+    console.log(ans)
+</script>
